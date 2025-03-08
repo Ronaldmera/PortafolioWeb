@@ -86,7 +86,7 @@
         top: 6vh;
         right: 0;
         width: 60vw;
-        background-color: #b3d0e5;
+        background-color: black;                                      
         text-align: center;
         border-radius: 0 0 10px 10px;
         transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
@@ -104,6 +104,7 @@
         width: 100%; 
         text-align: center; 
         padding: 10px 0; 
+        color: white;
     }    
     .nav-links.show {
         max-height: 100vh;

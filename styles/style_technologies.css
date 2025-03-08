@@ -22,8 +22,8 @@
     text-align: center;
     font-size: 3rem;
     background: linear-gradient(90deg, #1160a7,#32cf81);                                        
-        -webkit-background-clip: text; 
-        color: transparent; 
+    -webkit-background-clip: text; 
+    color: transparent; 
 }
 
 .technology-item {
@@ -85,7 +85,7 @@
 @media (max-width: 480px) {
     .subtitle-technologies{
         top: 2vh;
-        font-size: 2.5rem; 
+        font-size: 2.5rem;
     }
     .technologies-container {
         grid-template-columns: repeat(auto-fit, minmax(130px, 150px));
@@ -94,6 +94,10 @@
     }
     .technology-item {
         min-height: 100px; 
+    }
+    .technology-item p {
+        font-size: 1.5rem;
+        font-family: 'Quicksand', sans-serif;
     }
 }
 
