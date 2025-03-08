@@ -1,3 +1,5 @@
+AOS.init();
+
 const hamburguer = document.querySelector('.hamburguer');
 const enlaces = document.querySelector('#nav-links');
 
