@@ -1,4 +1,6 @@
 #index{
+    display: flex;
+    flex-direction: row;
     position: relative;
     top: 6vh;
     min-height: 94vh;
@@ -7,6 +9,7 @@
     font-family: 'quicksand';
     max-width: 1500px;
     margin: 0 auto;
+    align-items: center;
 }
 .profile{
     display: flex;
@@ -87,7 +90,7 @@
     flex: 1;
     justify-content: center; 
 }
-.skills .subtitle-skills{
+ .subtitle-skills{
     text-align: center;
     font-size: 3rem;
     /* color: #48b8d0; */
@@ -128,7 +131,7 @@
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     #index {
-        flex-direction: row;  /* Alineación horizontal */
+        flex-direction: row;  
         justify-content: space-between; 
         padding: 20px;
     }

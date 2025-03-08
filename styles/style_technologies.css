@@ -1,0 +1,101 @@
+#technologies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    margin-top: 6vh; 
+}
+
+.technologies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+   justify-content: center;
+    padding: 2rem;
+    align-items: center;
+    margin-top: 4vh;
+}
+.subtitle-technologies{
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #1160a7,#32cf81);                                        
+        -webkit-background-clip: text; 
+        color: transparent; 
+}
+
+.technology-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffff;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 150px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.technology-item p {
+    font-size: 1.9rem;
+    font-family: 'Quicksand', sans-serif;
+}
+/* @media (min-width: 1024px) and (max-width: 1440px) {
+ 
+} */
+
+@media (max-width: 1024px) {
+    #technologies {
+        min-height: 90vh;
+        margin-top: 12vh; 
+    }
+    .subtitle-technologies{
+        position: relative;
+        top: 5vh;
+    }
+    .technologies-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+        margin-top: 10vh;
+    }
+    
+    .technology-item {
+        min-height: 100px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .subtitle-technologies{
+        position: relative;
+        font-size: 2.9rem;  
+        top: 4vh;
+    }
+    .technologies-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+        margin-top: 8vh;
+        gap: 2rem;
+    }
+    .technology-item {
+        min-height: 100px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .subtitle-technologies{
+        top: 2vh;
+        font-size: 2.5rem; 
+    }
+    .technologies-container {
+        grid-template-columns: repeat(auto-fit, minmax(130px, 150px));
+        margin-top: 5vh;
+        gap: 1rem;
+    }
+    .technology-item {
+        min-height: 100px; 
+    }
+}
+
+
+
