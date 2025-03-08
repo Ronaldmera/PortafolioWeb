@@ -18,7 +18,8 @@
    justify-content: center;
     padding: 2rem;
     align-items: center;
-    margin-top: 4vh;
+    margin: 4vh 0;
+    flex: 1;
 }
 .subtitle-technologies{
     text-align: center;
