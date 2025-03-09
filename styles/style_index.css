@@ -91,6 +91,7 @@
     justify-content: center; 
 }
  .subtitle-skills{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 3rem;
     /* color: #48b8d0; */
@@ -127,6 +128,10 @@
     min-height: 100px;
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgba(58, 133, 219, 0.404);
+    transition: .2s ease-in-out;
+}
+.container-skills .skill:hover{
+     transform: scale(1.02);
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
