@@ -11,6 +11,7 @@ body {
     flex: 1;  
     background-repeat: no-repeat;
     background-color: #F2F3F5;
+    visibility: hidden;
 }
 p{
     color: rgba(0, 0, 0, 0.589);
