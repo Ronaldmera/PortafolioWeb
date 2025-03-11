@@ -44,31 +44,6 @@ footer {
 .links img:hover {
     transform: scale(1.1);
 }
-footer nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    /* text-align: center; */
-    right: 5%;
-    bottom: 13vh;
-    gap: 20px;
-}
-
-footer nav ul li {
-    margin: 0 15px;
-}
-
-footer nav ul li a {
-    /* text-decoration: none; */
-    color: #fff;
-    font-weight: bold;
-}
-
-footer nav ul li a:hover {
-    color: #00bcd4;
-}
 
 /*asdasdsadasd*/
 /* @media (min-width: 1024px) and (max-width: 1440px) {
@@ -97,19 +72,7 @@ footer nav ul li a:hover {
         height: 25px;
         width: 25px;
     }
-    footer nav ul {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-        padding: 0;
-        position: absolute;
-        /* text-align: center; */
-        right: 5%;
-        bottom: 4vh;
-        gap: 10px;
-    }
-    
-   
+
 }
 
 @media (max-width: 480px) {

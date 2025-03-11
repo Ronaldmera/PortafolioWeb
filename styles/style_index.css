@@ -1,9 +1,38 @@
-#index{
+/* #welcome-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #d9e3eb;
+    min-height: 100vh;
+    padding-top: 6vh;
+}
+
+#welcome-index h1 {
+    font-size: 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0877b8;
+}
+
+#welcome-index h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#welcome-index a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 15px;
+    background-color: #60acee;
+    border-radius: 10px;
+    color: whitesmoke;
+} */
+
+#index {
     display: flex;
     flex-direction: row;
-    position: relative;
-    top: 6vh;
-    min-height: 94vh;
+    min-height: 100vh;
     display: flex;
     padding: 0px;
     font-family: 'quicksand';
@@ -11,7 +40,8 @@
     margin: 0 auto;
     align-items: center;
 }
-.profile{
+
+.profile {
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -20,32 +50,38 @@
     justify-content: center;
     gap: 1rem;
 }
+
 .profile .photo {
     border-radius: 50%;
     width: 15vw;
-    height: 15vw; 
-    max-width: 190px; 
-    max-height: 190px; 
-    min-width: 60px; 
-    min-height: 60px; 
-    object-fit: cover; 
+    height: 15vw;
+    max-width: 190px;
+    max-height: 190px;
+    min-width: 60px;
+    min-height: 60px;
+    object-fit: cover;
     margin: 0 auto;
 }
-.profile h1{
+
+.profile h1 {
     font-size: 2.5rem;
 }
-.profile p{
+
+.profile p {
     font-size: 1.8rem;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
+
 .profile .links a img {
-   height: 3rem;
+    height: 3rem;
 }
-.txt-about{
+
+.txt-about {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -55,22 +91,26 @@
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgb(126, 171, 221);
 }
-.subtitle{
+
+.subtitle {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #48b8d0;
 }
-.subtitle p{
+
+.subtitle p {
     text-align: justify;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: center;
     font-size: 2rem;
     margin-top: 1.5rem;
 }
-.button a{
+
+.button a {
     width: auto;
     background-color: black;
     border-radius: 20px;
@@ -78,35 +118,44 @@
     text-decoration: none;
     color: white;
 }
-.button a:hover{
+
+.button a:hover {
     background-color: rgb(31, 28, 28);
     box-shadow: 0px 1px 5px #219893;
 
 }
+
 .skills {
     display: flex;
     flex-direction: column;
-    /* background-color: black; */
+    align-items: center;
+    /* Centra los elementos en el eje Y */
+    justify-content: center;
+    /* Opcional: centra también en el eje X si es necesario */
     flex: 1;
-    justify-content: center; 
+    height: 100vh;
+  
 }
- .subtitle-skills{
+
+.subtitle-skills {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 3rem;
     /* color: #48b8d0; */
     /* background: -webkit-linear-gradient(90deg, #2f99f5,#03b35b); */
-    background: linear-gradient(90deg, #1160a7,#32cf81);                                        
-        -webkit-background-clip: text; 
-        color: transparent; 
+    background: linear-gradient(90deg, #1160a7, #32cf81);
+    -webkit-background-clip: text;
+    color: transparent;
 }
-.skills img{
+
+.skills img {
     position: relative;
     top: 2.5rem;
     height: 5rem;
     width: 5rem;
     margin: 0 auto;
 }
+
 .skills .container-skills {
     display: flex;
     flex-direction: column;
@@ -115,7 +164,8 @@
     font-size: 1.8rem;
     padding: 50px;
 }
-.skill h3{
+
+.skill h3 {
     color: #48b8d0;
 }
 
@@ -130,27 +180,32 @@
     box-shadow: 1px 1px 1px rgba(58, 133, 219, 0.404);
     transition: .2s ease-in-out;
 }
-.container-skills .skill:hover{
-     transform: scale(1.02);
+
+.container-skills .skill:hover {
+    transform: scale(1.02);
 }
 
 @media (min-width: 1024px) and (max-width: 1440px) {
     #index {
-        flex-direction: row;  
-        justify-content: space-between; 
+        flex-direction: row;
+        justify-content: space-between;
         padding: 20px;
     }
+
     .profile {
-        width: 30%;  
+        width: 30%;
     }
+
     .skills {
-        width: 60%;  
+        width: 60%;
     }
+
     .skills .container-skills {
-        flex-direction: column;  
+        flex-direction: column;
         justify-content: space-between;
         gap: 2rem;
     }
+
     .skills img {
         height: 5rem;
         width: 5rem;
@@ -159,53 +214,67 @@
 
 @media (max-width: 1024px) {
     #index {
-        flex-direction: column;  
+        flex-direction: column;
         padding: 30px;
     }
+
     .profile {
-        width: 80%;  
+        width: 80%;
         margin: 0 auto;
     }
+
     .skills {
-        width: 80%;  
+        width: 80%;
         margin: 0 auto;
-        position: relative;
-        top: 7rem;
+        padding-top: 7rem;
     }
+
     .skills .container-skills {
-        flex-direction: column;  
+        flex-direction: column;
     }
+
     .skills img {
-        height: 4rem; 
+        height: 4rem;
         width: 4rem;
     }
 }
 
 @media (max-width: 768px) {
     #index {
-        flex-direction: column;  
+        flex-direction: column;
         padding: 15px;
         text-align: center;
     }
+
     .profile {
-        width: 90%;  
+        width: 90%;
+        padding: 20px 0;
         margin: 0 auto;
     }
+
     .profile .photo {
-        width: 40vw;  
+        width: 40vw;
         height: 40vw;
     }
+    .profile .links a img {
+        height: auto;
+       width: 35px;
+     }
+
     .skills {
-        width: 90%;  
+        width: 90%;
         margin: 0 auto;
     }
+
     .skills img {
-        height: 4rem; 
+        height: 4rem;
         width: 4rem;
     }
+
     .skills .subtitle-skills {
-        font-size: 2.9rem;  
+        font-size: 2.9rem;
     }
+
     .skills .container-skills {
         padding: 50px 30px;
     }
@@ -213,48 +282,53 @@
 
 @media (max-width: 480px) {
     #index {
-        flex-direction: column;  
-        padding: 0px;  
+        flex-direction: column;
+        padding: 0px;
         text-align: center;
     }
+
     .profile {
         position: relative;
         top: 1rem;
-        width: 100%;  
+        width: 100%;
         margin: 0 auto;
     }
+
     .profile .photo {
-        width: 45vw;  
+        width: 45vw;
         height: 45vw;
     }
+    .links {
+        height: 60px;
+    }
+
     .skills {
-        width: 100%;  
+        width: 100%;
         margin: 0 auto;
         padding: 0px;
+        padding-top: 4vh;
     }
-    .skills img {
-        height: 3rem; 
-        width: 3rem;
-    }
+
     .skills .subtitle-skills {
-        font-size: 2.5rem;  
+        font-size: 2.5rem;
     }
+
     .skills .container-skills {
         gap: 2rem;
         font-size: 1.8rem;
         padding: 50px 20px;
     }
+
     .skill h3 {
         font-size: 1.6rem;
     }
+
     .skill p {
         font-size: 1.5rem;
     }
+
     .button a {
-        font-size: 1.6rem;  
-        padding: 1.4rem;  
+        font-size: 1.6rem;
+        padding: 1.4rem;
     }
 }
-
-
-

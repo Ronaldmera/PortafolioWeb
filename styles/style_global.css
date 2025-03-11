@@ -12,6 +12,10 @@ body {
     background-repeat: no-repeat;
     background-color: #F2F3F5;
     visibility: hidden;
+    /* scroll-padding-top: 6vh; */
+}
+main{
+    min-height: 100vh;
 }
 p{
     color: rgba(0, 0, 0, 0.589);
