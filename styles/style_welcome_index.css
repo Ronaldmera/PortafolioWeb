@@ -7,6 +7,8 @@
     background-color: #d9e3eb;
     min-height: 100vh;
     padding-top: 6vh;
+    /* background: linear-gradient(180deg, #5ea4e2, #9ac3e7,#F2F3F5); */
+    background: linear-gradient(0deg,#d9e3eb,#a3cfe9);
 }
 
 #welcome-index h1 {
@@ -18,15 +20,24 @@
 #welcome-index h2 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.726);
 }
 
 #welcome-index a {
     text-decoration: none;
     font-size: 1.5rem;
     padding: 15px;
-    background-color: #60acee;
     border-radius: 10px;
+    /* background-color: #3c9ff5; */
+    background-color: black;
+    /* color: white; */
     color: whitesmoke;
+    box-shadow: 1px 1px 10px rgb(22, 112, 214);
+    transition: ease .2s;
+}
+#welcome-index a:hover{
+    transform: scale(1.05);
+    transform: scaleY(20px);
 }
 
 /* Responsive */

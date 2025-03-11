@@ -61,6 +61,7 @@
     min-height: 60px;
     object-fit: cover;
     margin: 0 auto;
+    box-shadow: 0px 0px  5px #48B8D0;
 }
 
 .profile h1 {
@@ -79,6 +80,8 @@
 
 .profile .links a img {
     height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgb(83, 216, 149);
 }
 
 .txt-about {
@@ -117,11 +120,13 @@
     padding: 1.5rem;
     text-decoration: none;
     color: white;
+    box-shadow: 0px 0px 0px 2px rgb(83, 216, 149);
+    transition: ease-out .2s;
 }
 
 .button a:hover {
-    background-color: rgb(31, 28, 28);
-    box-shadow: 0px 1px 5px #219893;
+    box-shadow: 0px 0px 0px 2px rgb(70, 193, 241);
+    transform: scale(1.04);
 
 }
 
