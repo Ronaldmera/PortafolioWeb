@@ -9,6 +9,7 @@
     padding-top: 6vh;
     /* background: linear-gradient(180deg, #5ea4e2, #9ac3e7,#F2F3F5); */
     background: linear-gradient(0deg,#d9e3eb,#a3cfe9);
+    position: relative;
 }
 
 #welcome-index h1 {
@@ -16,7 +17,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #0877b8;
 }
-
 #welcome-index h2 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -28,19 +28,29 @@
     font-size: 1.5rem;
     padding: 15px;
     border-radius: 10px;
-    /* background-color: #3c9ff5; */
     background-color: black;
-    /* color: white; */
     color: whitesmoke;
     box-shadow: 1px 1px 10px rgb(22, 112, 214);
     transition: ease .2s;
+    animation: btnmove 3s ease-in-out infinite; 
+    animation-delay: 0.3s;
+}
+@keyframes btnmove {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-10px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 1; } 
 }
 #welcome-index a:hover{
     transform: scale(1.05);
-    transform: scaleY(20px);
 }
 
 /* Responsive */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    #welcome-index {
+        padding: 0 10%;
+        text-align: center;
+    }
+}
 @media (max-width: 1024px) {
     #welcome-index {
         padding: 0 10%;
@@ -61,6 +71,37 @@
     }
 
 }
-/* @media (max-width: 480px) {
- 
-} */
+@media (max-width: 768px) {
+  
+    #welcome-index h1 {
+        font-size: 3.2rem;
+    }
+
+    #welcome-index h2 {
+        font-size: 2.5rem;
+    }
+
+    #welcome-index a {
+        padding: 11px;
+    }
+}
+
+@media (max-width: 480px) {
+    #welcome-index {
+        padding: 0 1%;
+        text-align: center;
+    }
+    #welcome-index h1 {
+        font-size: 3rem;
+    }
+
+    #welcome-index h2 {
+        font-size: 2rem;
+    }
+
+    #welcome-index a {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+    
+}
