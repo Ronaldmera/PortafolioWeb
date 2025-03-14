@@ -204,6 +204,9 @@
     .skills .container-skills {
         flex-direction: column;
     }
+    .container-skills .skill{
+        padding: 20px;
+    }
 
     .skills img {
         height: 4rem;
@@ -290,13 +293,16 @@
         font-size: 1.8rem;
         padding: 50px 20px;
     }
+    .container-skills .skill{
+        padding: 20px;
+    }
 
     .skill h3 {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .skill p {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
 
     .button a {
