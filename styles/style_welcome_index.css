@@ -19,7 +19,7 @@
 }
 #welcome-index h2 {
     font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color:var(--text-color);
 }
 
@@ -65,10 +65,10 @@
         font-size: 2.8rem;
     }
 
-    #welcome-index a {
+    /* #welcome-index a {
         font-size: 1.5rem;
         padding: 12px;
-    }
+    } */
 
 }
 @media (max-width: 768px) {
@@ -81,9 +81,9 @@
         font-size: 2.5rem;
     }
 
-    #welcome-index a {
+    /* #welcome-index a {
         padding: 11px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
@@ -99,9 +99,9 @@
         font-size: 2rem;
     }
 
-    #welcome-index a {
+    /* #welcome-index a {
         padding: 10px;
         font-size: 1.3rem;
-    }
+    } */
     
 }
