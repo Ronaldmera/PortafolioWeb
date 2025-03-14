@@ -1,3 +1,4 @@
+@import url(variables.css);
 :root{
   --font-quicksand:'quicksand';
 }
@@ -6,7 +7,9 @@
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding-top: 6vh;
+  /* padding-top: 6vh; */
+  background: var(--bg-projects);
+  justify-content: center;
 }
 
 .welcome-container {
@@ -15,7 +18,6 @@
   align-items: center;
   text-align: center;
   position: relative;
-  top: 22vh;
   margin: 0 auto;
   max-width: 1200px;
   gap: 10px;
@@ -24,26 +26,20 @@
 .welcome-container h2 {
   font-size: 4rem;
   font-family: var(--font-quicksand);
-  color: #313638;
+  color:var(--text-color);
 }
 
 .welcome-container h1 {
   font-size: 5rem;
   position: relative;
   bottom: 5vh;
-}
-
-#welcome img {
-  position: absolute;
-  max-height: 60vh;
-  width: 100%;
-  bottom: 0;
-  transition: opacity 0.2s linear;
+  color: var(--color-txt-name);
 }
 
 /* From Uiverse.io by yaasiinaxmed */
 #btn-projects {
   --color: #569ceb;
+  background-color: #242525;
   font-family: inherit;
   display: inline-block;
   width: 6em;
@@ -97,7 +93,7 @@
 
 #projects h2 {
   font-size: 3rem;
-  background: linear-gradient(90deg, #1160a7,#32cf81);                                        
+  background: var(--h2-bg);                                        
   -webkit-background-clip: text; 
   color: transparent; 
 }
@@ -111,14 +107,12 @@
   flex: 1;
   align-items: center;
 }
-
-
 .project-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background-color: var(--primary-bg);
   width: 40%;
   min-height: 350px;
   border-radius: 10px;
@@ -143,12 +137,12 @@
 .project-card h3 {
   margin: 15px 0 10px;
   font-size:2.5rem;
-  color: #313638;
+  color: var(--text-color);
 }
 
 .project-card p {
   font-size: 1.8rem;
-  color: #666;
+  color:var(--text-color);
   text-align: left;
 }
 .txt-card{
@@ -213,12 +207,10 @@
   .project-card h3 {
     margin: 15px 0 10px;
     font-size:2.5rem;
-    color: #313638;
   }
   
   .project-card p {
     font-size: 1.8rem;
-    color: #666;
     text-align: left;
   }
 
@@ -260,7 +252,6 @@
   .welcome-container h2 {
     font-size: 2rem;
     font-family: 'quicksand';
-    color: #313638;
     margin: 0 6vw;
   }
 
@@ -277,7 +268,6 @@
   }
 
   #btn-projects {
-    --color: #569ceb;
     font-family: inherit;
     display: inline-block;
     width: 5em;

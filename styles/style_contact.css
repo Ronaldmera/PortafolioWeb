@@ -1,15 +1,16 @@
+@import url(variables.css);
 #contact{
     display: flex;
     flex-direction: column;
     min-height: 65vh;
     /* background-color: #27408b; */
     align-items: center;
-    background-color: #dee3e742;
+    /* background-color: var(--contact-bg); */
     margin: 0 auto;
 }
 .subtitle-contact{
     font-size: 3rem;
-    background: linear-gradient(90deg, #1160a7,#32cf81);                                        
+    background: var(--h2-bg);                                        
     -webkit-background-clip: text; 
     color: transparent; 
     margin-top: 4vh;
@@ -25,7 +26,7 @@
 }
 /* From Uiverse.io by Yaya12085 */ 
 .card {
-    background-color: #fff;
+    background-color: var(--contact-bg);
     border-radius: 10px;
     padding: 20px;
     width: 350px;
@@ -37,7 +38,7 @@
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    color: #53a7f5;
+    color: var(--color-title-form);
   }
   
   .form {
@@ -52,8 +53,7 @@
   
   .form .group label {
     font-size: 16px;
-    color: rgb(99, 102, 102);
-    background-color: #fff;
+    color:var(--color-label);
     position: relative;
     bottom: 4px;
 
@@ -75,7 +75,7 @@
   }
   
   .form button {
-    background-color: #3366cc;
+    background-color:var(--color-form-btn);
     color: #fff;
     border: none;
     border-radius: 5px;

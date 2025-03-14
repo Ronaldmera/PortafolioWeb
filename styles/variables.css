@@ -1,0 +1,79 @@
+/* variables.css */
+:root {
+    /*nav*/
+    --color-hamburguer:black;
+    --color-links-hamburguer:black;
+    --bg-hamburguer: rgb(255, 255, 255);
+    /*para todos*/
+    --h2-bg:  linear-gradient(90deg, #1160a7, #32cf81);
+    --header-color:#FFFF;
+    --primary-bg: #ffffff;
+    --color-body:#F2F3F5;
+    --text-color: #1f1e1e;
+    --accent-color: #48b8d0;
+    --color-white: white;
+    /*index*/
+    --btn-welcome-index:black;
+    --bg:linear-gradient(0deg,#F2F3F5,#aed8f0);
+    --color-txt-name:#0877b8;
+    --color-btn-welcome:whiteSmoke;
+    
+    --box-shadow-photo: 0px 0px  5px #48B8D0;
+    --bg-image-links:#F2F3F5;
+    --box-shadow-links-img:0px 0px 0px 2px rgb(83, 216, 149);
+    --box-shadow-txt-about:1px 1px 10px rgb(126, 171, 221);
+    --color-subtitle-h3-skills: #48b8d0;
+    /*seccion contact*/
+    --contact-bg:#FFFFFF;
+    --color-title-form:#53a7f5;
+    --color-label: rgb(99, 102, 102);
+    --color-form-btn:#3366cc;
+    --button-bg: black;
+    --button-text: white;
+    --button-border: rgb(83, 216, 149);
+    --button-hover-border: rgb(70, 193, 241);
+    --gradient-title: linear-gradient(90deg, #1160a7, #32cf81);
+    /*projects*/
+
+    /*footer*/
+    --color-footer: rgb(37, 34, 34);
+    --p:blue;
+}
+
+.dark-mode {
+    /*nav*/
+    --color-hamburguer:white;
+    --color-links-hamburguer:white;
+    --bg-hamburguer: black;
+    /*para todos*/
+    --h2-bg: linear-gradient(90deg, #48b8d0, #32cf81);
+    --header-color:#141e2e;
+    --primary-bg: #7d828a18;
+    --color-body:#141e2e;
+    --text-color: #e0e0e0;
+    --accent-color: #48b8d0;
+    --color-white: #ffffff;
+    /*welcome index*/
+    --btn-welcome-index:rgba(26, 29, 28, 0);
+    --bg:linear-gradient(0deg,#141E2E,#314a58ad);
+    --color-txt-name:#47B9CD;
+    --color-btn-welcome:white;
+    /* Sección index */
+    --box-shadow-photo: 0px 0px 5px #2880e4;
+    --bg-image-links:#f2f3f5;
+    --box-shadow-links-img: 0px 0px 0px 2px rgb(93, 180, 230);
+    --box-shadow-txt-about: 1px 1px 10px rgb(126, 171, 221);
+    --color-subtitle-h3-skills: #8fccf5;
+    /* Sección contact */
+    --contact-bg: rgba(255, 255, 255, 0.692);
+    --color-title-form:#1761a7;
+    --color-label: rgb(2, 1, 1);
+    --color-form-btn: #436eaf;
+    --button-bg: #252525;
+    --button-text: #e0e0e0;
+    --button-border: rgb(83, 216, 149);
+    --button-hover-border: rgb(70, 193, 241);
+    --gradient-title: linear-gradient(90deg, #48b8d0, #32cf81);
+     /*footer*/
+    --color-footer:#0a0f18;
+}

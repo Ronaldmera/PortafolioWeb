@@ -1,26 +1,26 @@
+@import url(variables.css);
 #welcome-index {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: #d9e3eb;
-    min-height: 100vh;
+    background-color:var(--color-body);
+    min-height: 95vh;
     padding-top: 6vh;
-    /* background: linear-gradient(180deg, #5ea4e2, #9ac3e7,#F2F3F5); */
-    background: linear-gradient(0deg,#d9e3eb,#a3cfe9);
+    background: var(--bg);
     position: relative;
 }
 
 #welcome-index h1 {
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #0877b8;
+    color: var(--color-txt-name);
 }
 #welcome-index h2 {
     font-size: 3rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgba(0, 0, 0, 0.726);
+    color:var(--text-color);
 }
 
 #welcome-index a {
@@ -28,8 +28,8 @@
     font-size: 1.5rem;
     padding: 15px;
     border-radius: 10px;
-    background-color: black;
-    color: whitesmoke;
+    background-color:var(--btn-welcome-index);
+    color: var(--color-btn-welcome);
     box-shadow: 1px 1px 10px rgb(22, 112, 214);
     transition: ease .2s;
     animation: btnmove 3s ease-in-out infinite; 

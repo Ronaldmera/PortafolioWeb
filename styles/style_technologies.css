@@ -1,3 +1,4 @@
+@import url(variables.css);
 #technologies {
     display: flex;
     flex-direction: column;
@@ -7,6 +8,7 @@
     margin-top: 6vh; 
     max-width: 1500px;
     margin: 0 auto;
+    color: var(--text-color);
 }
 
 .technologies-container {
@@ -24,7 +26,7 @@
 .subtitle-technologies{
     text-align: center;
     font-size: 3rem;
-    background: linear-gradient(90deg, #1160a7,#32cf81);                                        
+    background: var(--h2-bg);                                        
     -webkit-background-clip: text; 
     color: transparent; 
 }
@@ -35,7 +37,7 @@
     gap: 5px;
     align-items: center;
     justify-content: center;
-    background-color: #ffff;
+    background-color: var(--primary-bg);
     padding: 1rem;
     border-radius: 8px;
     min-height: 150px; 
