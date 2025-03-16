@@ -12,6 +12,7 @@
     --text-color: #1f1e1e;
     --accent-color: #48b8d0;
     --color-white: white;
+    --txt-subtitle-color: rgb(68, 89, 109);
     /*index*/
     --btn-welcome-index:black;
     --bg:linear-gradient(0deg,#F2F3F5,#aed8f0);
@@ -34,7 +35,7 @@
     --button-hover-border: rgb(70, 193, 241);
     --gradient-title: linear-gradient(90deg, #1160a7, #32cf81);
     /*projects*/
-    --btn-project:linear-gradient(90deg, #3391e4, #17b867);
+    --btn-project:linear-gradient(90deg, #1160a7, #32cf81);
 
     /*footer*/
     --color-footer: rgb(37, 34, 34);
@@ -54,8 +55,9 @@
     --text-color: #e0e0e0;
     --accent-color: #48b8d0;
     --color-white: #ffffff;
+    --txt-subtitle-color: rgba(245, 234, 234, 0.842);
     /*welcome index*/
-    --btn-welcome-index:rgba(26, 29, 28, 0);
+    --btn-welcome-index:linear-gradient(90deg, #4778a3, #0ba156);
     --bg:linear-gradient(0deg,#141E2E,#314a58ad);
     --color-txt-name:#47B9CD;
     --color-btn-welcome:white;

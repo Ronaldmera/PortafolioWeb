@@ -1,26 +1,64 @@
 @import url(variables.css);
 #welcome-index {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     background-color:var(--color-body);
-    min-height: 95vh;
+    max-height: 90vh;
     padding-top: 6vh;
     background: var(--bg);
     position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.container-welcome{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    max-width: 1500px;
+}
+#welcome-index .left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 0 5%;
+    width: 80%;
+    gap: 30px;
+}
+#welcome-index .right{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    flex: 1;
+}
+#welcome-index img{
+    max-width: 400px;
+    filter: drop-shadow(2px 2px 5px rgb(62, 146, 202)); 
+    animation: moveImg 3s ease infinite;
+}
+@keyframes moveImg {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-5px); opacity: 1; }
+    100% { transform: translateY(0); opacity: 1; } 
 }
 
 #welcome-index h1 {
     font-size: 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: var(--color-txt-name);
+    /* color: var(--color-txt-name); */
+    background: var(--h2-bg);
+    -webkit-background-clip: text;
+    color: transparent; 
+    
 }
 #welcome-index h2 {
     font-size: 3rem;
-    font-family:Arial, Helvetica, sans-serif;
-    color:var(--text-color);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* color:var(--text-color);  */
+    color:var( --txt-subtitle-color);
 }
 
 #welcome-index a {
@@ -28,12 +66,14 @@
     font-size: 1.5rem;
     padding: 15px;
     border-radius: 10px;
-    background-color:var(--btn-welcome-index);
+    background:var(--btn-welcome-index);
     color: var(--color-btn-welcome);
     box-shadow: 1px 1px 10px rgb(22, 112, 214);
     transition: ease .2s;
     animation: btnmove 3s ease-in-out infinite; 
     animation-delay: 0.3s;
+    width: 200px;
+    text-align: center;
 }
 @keyframes btnmove {
     0% { transform: translateY(0); opacity: 1; }
@@ -44,17 +84,20 @@
     transform: scale(1.05);
 }
 
+
 /* Responsive */
 @media (min-width: 1024px) and (max-width: 1440px) {
-    #welcome-index {
+    /* #welcome-index {
         padding: 0 10%;
         text-align: center;
+    } */
+    #welcome-index img{
+        max-width: 300px; 
     }
 }
 @media (max-width: 1024px) {
-    #welcome-index {
-        padding: 0 10%;
-        text-align: center;
+    #welcome-index img{
+        max-width: 270px; 
     }
 
     #welcome-index h1 {
@@ -65,13 +108,26 @@
         font-size: 2.8rem;
     }
 
-    /* #welcome-index a {
-        font-size: 1.5rem;
-        padding: 12px;
-    } */
-
 }
 @media (max-width: 768px) {
+    #welcome-index {
+        margin-bottom: 55px;
+    }
+
+    .container-welcome{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    #welcome-index .left{
+        display: flex;
+        width: 100%;
+    }
+    #welcome-index img{
+        margin: 0 auto;
+            max-width: 230px; 
+    }
   
     #welcome-index h1 {
         font-size: 3.2rem;
@@ -81,12 +137,17 @@
         font-size: 2.5rem;
     }
 
-    /* #welcome-index a {
-        padding: 11px;
-    } */
+    #welcome-index a {
+       width: 120px;
+       margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
+    #welcome-index img{
+        margin: 0 auto;
+            max-width: 200px; 
+    }
     #welcome-index {
         padding: 0 1%;
         text-align: center;
@@ -99,9 +160,9 @@
         font-size: 2rem;
     }
 
-    /* #welcome-index a {
-        padding: 10px;
+    #welcome-index a {
+        padding: 15px;
         font-size: 1.3rem;
-    } */
+    }
     
 }
