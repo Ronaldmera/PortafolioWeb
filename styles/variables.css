@@ -4,6 +4,7 @@
     --color-hamburguer:black;
     --color-links-hamburguer:black;
     --bg-hamburguer: rgb(255, 255, 255);
+    --box-shadow-menu: rgb(184, 181, 181);
     /*para todos*/
     --h2-bg:  linear-gradient(90deg, #1160a7, #32cf81);
     --header-color:#FFFF;
@@ -50,7 +51,8 @@
     /*nav*/
     --color-hamburguer:white;
     --color-links-hamburguer:white;
-    --bg-hamburguer: black;
+    --bg-hamburguer: #141E2E;
+    --box-shadow-menu:rgba(0, 0, 0, 0.705);
     /*para todos*/
     --h2-bg: linear-gradient(90deg, #48b8d0, #32cf81);
     --header-color:#141e2e;

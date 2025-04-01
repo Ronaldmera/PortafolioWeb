@@ -81,19 +81,23 @@
     }
 
     .nav-links {
-        max-height: 0;
         overflow: hidden;
         opacity: 0;
         flex-direction: column;
         position: absolute;
         top: 6vh;
         right: 0;
-        width: 60vw;
+        width: 232px;
+        height: 100vh;
         background-color:var(--bg-hamburguer);                                      
         text-align: center;
         border-radius: 0 0 10px 10px;
-        transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
         gap: 2px;
+        line-height: 25px;
+        box-shadow: 0 3px 5px 0 var( --box-shadow-menu);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        display: none;
     }
     .nav-links li {
         min-height: 5vh;
@@ -101,6 +105,7 @@
         align-items: center; 
         justify-content: center; 
         border-bottom: 1px solid rgba(128, 128, 128, 0.192);
+        border-image: linear-gradient(to right, rgba(128, 128, 128, 0.048), rgba(128, 128, 128, 0.192)) 1;
     }
     
     .nav-links li a {
@@ -109,9 +114,10 @@
         padding: 10px 0; 
         color: var(--color-links-hamburguer);
     }    
-    .nav-links.show {
-        max-height: 100vh;
+    .nav-links.active {
+        display: flex;
         opacity: 1;
+        transform: translateX(0);
     }
 
     .hamburguer {
