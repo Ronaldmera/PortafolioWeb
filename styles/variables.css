@@ -39,6 +39,7 @@
     --btn-project:linear-gradient(90deg, #1160a7, #32cf81);
     --text-color-btn-project:white;
     --subtitle-card:#417BB8;
+    --bg-li:#eaeef1;
 
     /*footer*/
     --color-footer: rgb(37, 34, 34);
@@ -84,6 +85,7 @@
     --btn-project:linear-gradient(90deg, #3391e491, #17b868c4);
     --text-color-btn-project:white;
     --subtitle-card:#80bdff;
+    --bg-li:rgba(110, 109, 109, 0.425);
      /*footer*/
     --color-footer:#0a0f18;
 }
